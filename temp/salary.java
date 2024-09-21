@@ -12,6 +12,7 @@ public class salary{
 	double income = total - tax;
 	System.out.print("Your total wage is:");
 	System.out.println(income);
+
     }
 }
 
