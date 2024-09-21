@@ -1,0 +1,12 @@
+import example.People;
+
+
+public class Staff{
+    public static void main(String[] args){
+	People new_mem = new People("Billy", "Batson");
+	System.out.println(new_mem.getName());
+    }
+}
+
+
+	

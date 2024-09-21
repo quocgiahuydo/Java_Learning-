@@ -1,0 +1,10 @@
+import example.*;
+
+
+public class Main{
+    public static void main(String[] args){
+	People new_memb = new People("Harry", "Do");
+	System.out.print(new_memb.getName());
+    }
+}
+
