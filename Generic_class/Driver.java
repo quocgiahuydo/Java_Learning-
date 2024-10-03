@@ -9,7 +9,7 @@ public class Driver{
 	System.out.print("PRINTING Box<Integer>:\t");
 	bint.print();
  
-	Box[] bArr = {bstr, bint};
+	Box[] bArr = {bstr};
 	Boxes bs = new Boxes(bArr);
 	System.out.print("CHECKING EMPTY BOXES BEFORE UNBOXING:\t");
 	System.out.println(bs.emptyBoxes());
