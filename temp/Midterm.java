@@ -7,6 +7,7 @@ public class Midterm {
         Object[] a = new Object[]{b,c,d};
         for(Object z : a){
             System.out.println(z);
+            
         }
     }
     
