@@ -1,9 +1,10 @@
 
 public class subclass extends abstractExample {
-
-    public subclass(String name, int age )
+    public int exp;
+    public subclass(String name, int age, int exp )
     {
-        super(name, age);
+	super(name,age);
+	this.exp = exp;
     }
     @Override
     public String getName(){

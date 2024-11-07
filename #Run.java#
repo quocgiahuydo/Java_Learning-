@@ -7,3 +7,6 @@ public class Run{
 	System.out.println(ArrayOps.find(arr, 7)); //4. Should print false
     }
 }
+
+
+
