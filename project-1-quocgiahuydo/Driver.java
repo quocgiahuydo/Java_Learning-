@@ -1,6 +1,7 @@
 import library.*;
 import library.items.*;
 import library.people.*;
+import library.structures.OrderedList;
 /*
   You'll need to properly import the package files to use the different classes here. 
  */
@@ -90,7 +91,12 @@ public class Driver{
 	    System.out.println(lib.getMembers(admin));
 
 	    System.out.println(lib.allArtistItems(user, thomasP));
-	    System.out.println(lib.allGenreItems(user, Item.Genre.DRAMA));
+		System.out.println("CHeck here------------------");
+		
+		OrderedList<Integer,Item> templib =lib.getCatalogue(admin);
+		Item tempI = templib.get(Integer.parseInt(" 0x4db183f"));
+		System.err.println("Hreee");
+	    System.out.println(lib.allGenreItems(user, Item.Genre.valueOf("DRAMA")));
 	    System.out.println(lib.allGenreItems(user, Item.Genre.COMEDY));
 		System.out.println(lib.checkOutItem(admin2, user3, hamletMovie));
 		//System.out.println(lib.checkOutItem(admin, user, neuroM));

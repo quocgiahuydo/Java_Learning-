@@ -1,0 +1,29 @@
+import java.util.function.*;;
+
+public class Adjuster {
+    public static double adjust(double val, DoubleUnaryOperator adjustment)
+    {
+    return adjustment.applyAsDouble(val);
+    }
+    public static int changeInt(int val, IntUnaryOperator change){
+        return change.applyAsInt(val);
+    }
+    public static void main(String args[]) {
+    double sample = 70.2;
+    int age = 19;
+    System.out.println("My age in the next 2 year");
+    System.out.println(changeInt(age, a->a+2));
+
+    System.out.println("My age in the next 2 decades");
+    System.out.println(changeInt(age, a->a+20));
+    System.out.println("My age in 4 years ago");
+    System.out.println(changeInt(age, a->a-4));
+    
+    System.out.println("Initial reading: " + sample);
+    System.out.print("Adding 3: ");
+    System.out.println(adjust(sample, s -> s + 3));
+    System.out.print("Reducing by 10%: ");
+    System.out.println(adjust(sample, s -> s * 0.9));
+    }
+    }
+    
